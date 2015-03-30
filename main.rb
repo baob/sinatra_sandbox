@@ -1,7 +1,11 @@
 require 'sinatra'
 
 get '/' do
-  'Kaboom'
+  haml :home
+end
+
+get '/about' do
+  haml :about
 end
 
 get '/hello_back' do
