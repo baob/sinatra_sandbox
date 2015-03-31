@@ -1,10 +1,12 @@
 require 'sinatra'
 
 get '/' do
+  @title = 'Welcome'
   haml :home
 end
 
 get '/about' do
+  @title = 'About'
   haml :about
 end
 
